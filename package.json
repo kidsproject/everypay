@@ -1,6 +1,6 @@
 {
-  "name": "@lytrax/everypay",
-  "version": "1.0.9",
+  "name": "@kidsproject/everypay",
+  "version": "2.0.0",
   "description": "EveryPay payment gateway REST API adapter for JavaScript/NodeJS",
   "main": "src/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clytras/everypay.git"
+    "url": "git+https://github.com/kidsproject/everypay.git"
   },
   "keywords": [
     "everypay",
@@ -29,9 +29,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clytras/everypay/issues"
+    "url": "https://github.com/kidsproject/everypay/issues"
   },
-  "homepage": "https://github.com/clytras/everypay#readme",
+  "homepage": "https://github.com/kidsproject/everypay#readme",
   "dependencies": {
     "base-64": "^0.1.0",
     "form-urlencoded": "^3.0.1",
