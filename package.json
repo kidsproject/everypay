@@ -6,9 +6,8 @@
   "scripts": {
     "test": "mocha || true",
     "test-result": "mocha",
-    "build": "node ./scripts/build.js",
-    "deploy": "yarpm run build && cd ./dist && npm publish --access-public && cd ..",
-    "deploy-dry": "yarpm run build && cd ./dist && npm publish --access-public --dry-run && cd ..",
+    "deploy": "npm publish --access-public",
+    "deploy-dry": "npm publish --access-public --dry-run",
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml,js}\" --write",
     "lint": "eslint ./ --ignore-path .gitignore --ignore-pattern internals/scripts --fix",
     "lint:fix": "npm run lint --fix"
@@ -41,19 +40,17 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "colors": "^1.3.3",
-    "copy-dir": "^1.1.0",
     "dotenv": "^8.0.0",
-    "faker": "^4.1.0",
-    "fs-extra": "^8.1.0",
-    "mocha": "^6.1.4",
-    "yarpm": "^0.2.1",
     "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-prettier": "3.1.0",
+    "faker": "^4.1.0",
+    "fs-extra": "^8.1.0",
     "husky": "^3.0.0",
     "lint-staged": "^9.2.0",
+    "mocha": "^6.1.4",
     "prettier": "^1.18.2",
     "supports-color": "^7.0.0"
   },
@@ -71,5 +68,15 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "exports": {
+    "./Cards": "./src/Cards.js",
+    "./Customers": "./src/Customers.js",
+    "./Payments": "./src/Payments.js",
+    "./Refunds": "./src/Refunds.js",
+    "./Sellers": "./src/Sellers.js",
+    "./Tokens": "./src/Tokens.js",
+    "./Transfers": "./src/Transfers.js",
+    "./utils": "./src/utils.js"
   }
 }
