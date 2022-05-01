@@ -70,13 +70,6 @@
     }
   },
   "exports": {
-    "./Cards": "./src/Cards.js",
-    "./Customers": "./src/Customers.js",
-    "./Payments": "./src/Payments.js",
-    "./Refunds": "./src/Refunds.js",
-    "./Sellers": "./src/Sellers.js",
-    "./Tokens": "./src/Tokens.js",
-    "./Transfers": "./src/Transfers.js",
-    "./utils": "./src/utils.js"
+    "./*": "./src/*.js"
   }
 }
