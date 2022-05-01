@@ -1,8 +1,8 @@
 {
   "name": "@kidsproject/everypay",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "EveryPay payment gateway REST API adapter for JavaScript/NodeJS",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha || true",
     "test-result": "mocha",
@@ -11,7 +11,8 @@
     "deploy-dry": "yarpm run build && cd ./dist && npm publish --access-public --dry-run && cd ..",
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml,js}\" --write",
     "lint": "eslint ./ --ignore-path .gitignore --ignore-pattern internals/scripts --fix",
-    "lint:fix": "npm run lint --fix"
+    "lint:fix": "npm run lint --fix",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
