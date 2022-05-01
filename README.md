@@ -13,9 +13,9 @@ You can find full [API Documentation](docs/API.md) and [Testing instructions](do
 ## Installation
 
 NPM:<br>
-`npm install @lytrax/everypay --save`<br><br>
+`npm install everypay --save`<br><br>
 Yarn:<br>
-`yarn add @lytrax/everypay`
+`yarn add everypay`
 
 ### API Keys
 
@@ -69,9 +69,9 @@ createToken({
 ### Create token example
 
 ```javascript
-const { createToken } = require('@lytrax/everypay/Tokens');
+const { createToken } = require('everypay/Tokens');
 // Or ES6 import
-// import { createToken } from '@lytrax/everypay/Tokens';
+// import { createToken } from 'everypay/Tokens';
 
 // This should be called at the client
 
@@ -98,9 +98,9 @@ createToken({
 ### Create customer using token example (using async/await)
 
 ```javascript
-const { createCustomer } = require('@lytrax/everypay/Customers');
+const { createCustomer } = require('everypay/Customers');
 // Or ES6 import
-// import { createCustomer } from '@lytrax/everypay/Customers';
+// import { createCustomer } from 'everypay/Customers';
 
 async function myFlow({
   tokenId: token,
